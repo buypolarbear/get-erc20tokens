@@ -22,16 +22,17 @@ module.exports = {
         //     ]
         // };
 
-        var ethScanWebsite = 'https://etherscan.io/' + 'search/q=' + id;
+        var ethScanWebsite = 'https://etherscan.io/search?q=' + id;
 
         request(ethScanWebsite, function (error, response, html) {
             if (!error && response.statusCode == 200) {
-                // console.log(html);
+                 // console.log(html);
                 var $ = cheerio.load(html);
 
                 var data = {};
 
-                var _address = $('#ContentPlaceHolder1_trContract').children().;
+                var _address = $('#ContentPlaceHolder1_trContract').children().first().next().children().text();
+                console.log('tst');
                 console.log(_address);
 
 
