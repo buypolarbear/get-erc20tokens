@@ -1,0 +1,29 @@
+{
+  "name": "get-erc20tokens",
+  "version": "1.0.0",
+  "description": "Fetch ERC20 tokens from ICO Symbol. Use test JSON file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jitinp/get-erc20tokens.git"
+  },
+  "keywords": [
+    "ICO",
+    "Blockchain",
+    "Tokens"
+  ],
+  "author": "Jitin Pillai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jitinp/get-erc20tokens/issues"
+  },
+  "homepage": "https://github.com/jitinp/get-erc20tokens#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "fs": "0.0.1-security",
+    "request": "^2.83.0"
+  }
+}
