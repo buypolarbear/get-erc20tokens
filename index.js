@@ -7,6 +7,5 @@ icoList.forEach(function (item) {
     var id = item.symbol;
     console.log(id);
     var erc20Token = ethScan.erc20Token(id);
-    // console.log(erc20Token);
 });
 
